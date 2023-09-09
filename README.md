@@ -17,13 +17,13 @@ Python 3.x
 
 **Required Python packages** (install using pip install package_name):
 
-keyboard
-requests
-pyperclip
-cv2
-sqlite3 (for capturing browsing history)
-pyscreenshot (for taking screenshots)
-Usage
+keyboard.
+requests.
+pyperclip.
+cv2.
+sqlite3 (for capturing browsing history).
+pyscreenshot (for taking screenshots).
+Usage.
 Clone or download this repository to your local machine.
 
 *Ensure you have Python 3.x installed on your machine.
