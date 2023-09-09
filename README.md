@@ -1,53 +1,93 @@
-**#Keylogger Documentation**
+## SPY bot Documentation
 
-**Overview**
-This Python script is designed for educational and demonstrative purposes only. It captures various types of information from the host machine and stores it locally for analysis and demonstration. Please use this script responsibly, ensuring that you adhere to legal and ethical guidelines and obtain proper consent when applicable.
+### Introduction
+
+This Python script serves *educational and demonstrative* purposes. It captures various types of information from the host machine and stores it locally for analysis and demonstration. We emphasize the responsible use of this script and urge users to adhere to legal and ethical guidelines, including obtaining proper consent when applicable.
+
+### Uses
+Some uses of a keylogger are:
+- Security Testing: improving the protection against hidden key loggers;
+- Business Administration: Monitor what employees are doing (with their consent);
+- School/Institutions: Track keystrokes and log banned words in a file;
+- Personal Control and File Backup: Make sure no one is using your computer when you are away;
+- Parental Control: Track what your children are doing;
+- Self-analysis and assessment.
 
 **Features**
-Captures and logs keystrokes.
-Retrieves and stores wireless network SSIDs.
-Captures browsing history (Chrome) and stores it as JSON data.
-Tracks and logs the public IP address of the host machine.
-Stores machine information, including platform, machine name, and processor details.
-Optionally captures and stores clipboard data (if available).
-Sends keylogs to a Discord webhook for demonstration purposes.
+
+- **Keystrokes**: Captures and logs keystrokes for *educational purposes only*.
+- **Wireless Network Info**: Retrieves and stores wireless network SSID information.
+- **Browsing History**: Captures and stores browsing history (for Chrome) as *JSON data*.
+- **IP Tracking**: Tracks and logs the public IP address of the host machine.
+- **Machine Info**: Stores machine information, including platform, machine name, and processor details.
+- **Clipboard Data** (Optional): Optionally captures and stores clipboard data (if available).
+- **Discord Webhook**: Sends captured keystrokes to a Discord webhook for *demonstration purposes*.
 
 **Requirements**
-Python 3.x
 
-**Required Python packages** (install using pip install package_name):
+- **Python 3.x**
+- **Required Python Packages** (install using `pip install package_name`):
+  - **keyboard**
+  - **requests**
+  - **pyperclip**
+  - **cv2**
+  - **sqlite3** (for capturing browsing history)
+  - **pyscreenshot** (for taking screenshots)
 
-keyboard.
-requests.
-pyperclip.
-cv2.
-sqlite3 (for capturing browsing history).
-pyscreenshot (for taking screenshots).
-Usage.
-Clone or download this repository to your local machine.
+**Getting Started**
 
-*Ensure you have Python 3.x installed on your machine.
+1. **Setup**: Clone or download this repository to your local machine.
+2. **Python**: Ensure Python 3.x is installed.
+3. **Install Packages**: Install required Python packages using `pip install package_name`.
+4. **Configuration**: Modify the script to customize settings, including the Discord webhook URL and API key (for IP tracking).
+5. **Run**: Execute the script using `python Keylogger.py`.
+6. **Data Storage**: Captured data is stored in the **"logs" directory**.
+7. **Responsibility**: Review and use collected data responsibly, complying with legal and ethical standards.
 
-Install the required Python packages using the following command:
+## What is Keylogger ?
 
-Copy code
-pip install keyboard requests pyperclip cv2 sqlite3 pyscreenshot
-Modify the script as needed, including configuring the Discord webhook URL and API key (for IP tracking).
+_The action of recording (logging) the keys struck on a keyboard, often discreetly, so that the person using the keyboard is unaware that their activities are being observed is known as keystroke logging, also known as keylogging or keyboard capture. The person who is running the logging program can then obtain the data. Keylogger is most often used to steal passwords and other confidential information._
 
-Run the script using the following command:
+_Even Microsoft has openly confirmed that the final version of Windows 10 features a built-in keylogger “to improve typing and writing functions.”_
 
-Copy code
-python Keylogger.py
-The script will capture and store various types of information in the "logs" directory.
+## Type of Keyloggers
+*There are two types of keyloggers:*
 
-Please review and use the collected data responsibly and within legal and ethical boundaries.
+* ### Software-Based Keyloggers
+  * Features that collect user information without relying solely on keyboard key presses can be added to software keyloggers.
+  * Logging of the clipboard The software can capture anything that has been copied to the clipboard.
+  * Logging on the computer screen. To collect graphics-based information, screenshots are taken.
+  * Capturing text in a control programmatically.
+  * Search engine queries, instant messenger talks, FTP downloads, and other Internet-based activities are all being recorded (including the bandwidth used).
+
+* ### Hardware-Based Keyloggers
+  * Typical Hardware Keylogger is a hardware circuit that is installed anywhere between the computer keyboard and the computer for keystroke logging.
+  * Hardware keyloggers have an advantage over software keyloggers in that they can start logging as soon as the machine is switched on.
+  * Hardware-based keyloggers do not require the installation of any software because they operate at the hardware level of a computer system.
+  * A hardware keylogger’s memory size can range from a few kilobytes to several terabytes, with each keystroke recorded typically consuming a byte
+
+## How to detect and remove Keylogger
+_Are there tell-tale signs that your device is hosting a keylogger? The answer is, it depends. Like most malware, you can use a good antivirus/anti-malware scanner to find and remove keyloggers._
+
+_Keyloggers of poorer quality (such as the malware variety) might reveal themselves in a number of ways. The software might subtly degrade smartphone screenshots to a noticeable degree. On all devices, there could be a slowdown in web browsing performance. Or there’s a distinct lag in your mouse movement or keystrokes, or what you are actually typing doesn’t show up onscreen. You might even get an error message when loading graphics or web pages. All in all, something just seems “off.”_
+
+_The well-designed commercial grade of keylogger usually works flawlessly, so it does not affect system performance at all. If the keylogger is sending reports to a remote operator, it disguises itself as normal files or traffic. Some of the programs will even display a notice on the screen that the system is being monitored—such as in a corporate computing environment. Others can reinstall themselves if users somehow succeed in finding them and attempt to remove them._
+
+_Of course, the best way to protect yourself and your equipment from falling victim to keyloggers is to scan your system regularly with a quality cybersecurity program. For instance. It uses heuristic analysis, signature recognition, and identification of typical keylogger behavior associated with keystroke and screenshot capturing to first find the malware, and then remove it._
+
+## Safe Side
+_Avoid keyloggers by avoiding the user mistakes that lead to their ability to infect phones and computers. It starts with keeping your operating system, your applications, and web browsers up to date with the latest security patches. Always be skeptical about any attachments you receive, especially unexpected ones even if they seem to come from someone you know. When in doubt, contact the sender to ask. Keep your passwords long and complex, and avoid using the same one for different services._
+
+_Real-time, always-on antivirus/anti-malware protection is the gold standard for preventing not only infection from a keylogger, but also from all other associated malware threats. For all platforms and devices, from Windows and Android, Mac and iPhones, to business environments._
 
 **Customization**
-You can customize the data captured, data storage locations, and data transmission methods as needed.
 
-**Disclaimer**
-This script is intended for educational and demonstrative purposes only. Use it responsibly, and ensure that you follow legal and ethical guidelines in your jurisdiction. Unauthorized and unethical use of this script can violate privacy and legal regulations.
+You have the flexibility to customize data capture, storage locations, and data transmission methods to meet your specific requirements.
 
+**Legal Disclaimer**
 
-**NOTE**
-Feel free to expand on this README, add more details, or tailor it to your specific needs. Additionally, you may want to include information about potential risks, privacy considerations, and user consent in your documentation.
+This script is strictly for *educational and demonstrative purposes*. Users must exercise caution and responsibility. Ensure that you comply with legal and ethical standards in your jurisdiction. Unauthorized or unethical use of this script may infringe on privacy and legal regulations.
+
+**License**
+
+This script is provided under the *MIT License*.
