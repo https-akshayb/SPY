@@ -48,7 +48,6 @@ You can customize the data captured, data storage locations, and data transmissi
 **Disclaimer**
 This script is intended for educational and demonstrative purposes only. Use it responsibly, and ensure that you follow legal and ethical guidelines in your jurisdiction. Unauthorized and unethical use of this script can violate privacy and legal regulations.
 
-****License
-This script is provided under the MIT License.
 
+**NOTE**
 Feel free to expand on this README, add more details, or tailor it to your specific needs. Additionally, you may want to include information about potential risks, privacy considerations, and user consent in your documentation.
