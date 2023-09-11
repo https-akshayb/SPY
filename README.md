@@ -87,7 +87,3 @@ You have the flexibility to customize data capture, storage locations, and data 
 **Legal Disclaimer**
 
 This script is strictly for *educational and demonstrative purposes*. Users must exercise caution and responsibility. Ensure that you comply with legal and ethical standards in your jurisdiction. Unauthorized or unethical use of this script may infringe on privacy and legal regulations.
-
-**License**
-
-This script is provided under the *MIT License*.
